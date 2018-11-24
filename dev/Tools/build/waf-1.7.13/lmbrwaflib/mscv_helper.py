@@ -606,11 +606,13 @@ def gather_msvc_2017_versions(conf, windows_kit, versions):
     vc_paths = []
 
     vswhere_exe = find_vswhere()
+    Logs.warn('vswhere_exe ({})'.format(vswhere_exe))
     if not vswhere_exe == '':
         version_string = ''
         path_string = ''
         try:
             version_string = subprocess.check_output([vswhere_exe, '-property', 'installationVersion'] + conf.options.win_vs2017_vswhere_args.split())
+            Logs.warn('version_string ({})'.format(version_string))
             version_parts = version_string.split('.')
             version_string = version_parts[0]
             path_string = subprocess.check_output([vswhere_exe, '-property', 'installationPath'] + conf.options.win_vs2017_vswhere_args.split())

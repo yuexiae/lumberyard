@@ -1,3 +1,6 @@
 {
-    "ENABLE_ANDROID": "False"
+    "ENABLE_ANDROID": "True",
+    "LY_ANDROID_NDK": "D:/android-ndk-r13b",
+    "LY_ANDROID_SDK": "D:/android-sdk",
+    "LY_JDK": "D:/Program Files (x86)/Java/jdk1.8.0_171"
 }

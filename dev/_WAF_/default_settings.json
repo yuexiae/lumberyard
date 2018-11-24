@@ -391,7 +391,7 @@
         {
             "long_form": "--win-vs2017-vswhere-args", 
             "attribute": "win_vs2017_vswhere_args", 
-            "default_value": "-version [15.7.4,15.9]", 
+            "default_value": "-version [15.7.4,15.9,15.9.2]", 
             "description": "The arguments to pass to vswhere when locating vs2017 executables"
         }, 
         {
